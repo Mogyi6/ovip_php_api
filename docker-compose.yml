@@ -1,0 +1,9 @@
+services:
+  ovip-api:
+    build: .
+    container_name: ovip-api
+    ports:
+      - "5000:80"
+    env_file:
+      - .env
+    restart: always
